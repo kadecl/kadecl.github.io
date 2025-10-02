@@ -41,12 +41,28 @@
             color: #666;
             margin-top: 3em;
         }
+            /* ---- ここからアルバム用のスタイルを追加 ---- */
+    .album-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .album {
+        width: 180px;
+        text-align: center;
+    }
+    .album img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    /* ---- ここまで ---- */
     </style>
 </head>
 <body>
     <header>
         <h1>Dr. Natsuki Yoshino</h1>
-        <p>Researcher in Signal Processing</p>
+        <p>Researcher in Signal Processing, Violist</p>
     </header>
 
     <main>
@@ -70,34 +86,37 @@
             </ul>
         </section>
 
-        <section>
+        <section id="music">
   <h2>Creative Works</h2>
-  <ul>
-    <li>
-        <img src="Artwork.jpg" alt="Jikan cover" width="30">
-      <strong>"JIKAN" – Suimasen, Machigaimasu (1st Album, 2020)</strong><br>
+   <div class="album-list">
+     <div class="album">
+        <img src="Artwork.jpg" alt="Jikan cover" width="100">
+      <p><strong>"JIKAN" – Suimasen, Machigaimasu (1st Album, 2020)</strong><br>
       <em>Role:</em> Composed tracks 4–6, mixing (tracks 4–6), mastering (all tracks).<br>
       <em>Description:</em> A collection of six pieces themed around different times of day, created with a free and spontaneous approach.
-    </li>
-    <li>
-        <img src="upas.jpg" alt="Upas cover" width="30">
+</p>
+     </div>
+    <div class="album">
+        <img src="upas.jpg" alt="Upas cover" width="100">
+        <p>
       <strong>"Upas" – Suimasen, Machigaimasu (2nd Album, 2021)</strong><br>
       <em>Role:</em> Composed tracks 1 & 4, mixing and mastering (all tracks), violin performance (tracks 1, 2 & 4).<br>
       <em>Description:</em> Four tracks inspired by "winter in Hokkaido," ranging from classic jazz to electronic styles, including trance and lo-fi.
-    </li>
-  </ul>
-            <li>
+    </p>
+  </div>
+             <div class="album">
                 <img src="alt.jpg" alt="alternative fate cover" width="30">
       <strong>"Paralleled Trajectory" –  嘘と虚無の木漏れ日 (Uso to Kyomu no komorebi) (2022)</strong><br>
       <em>Role:</em> Arrangement and Mixing 4th track, strings performance (tracks 2, 4).<br>
       <em>Description:</em> aaa
-            </li>
-            <li>
+            </div>
+             <div class="album">
                 <img src="cres.jpg" alt="crescent cover" width="30">
       <strong>"Crescent Tears" –  嘘と虚無の木漏れ日 (Uso to Kyomu no komorebi) (2022)</strong><br>
       <em>Role:</em> Arrangement and Mixing 4th track, strings performance (tracks 1, 4).<br>
       <em>Description:</em> aaa
-            </li>
+            </div>
+   </div>
 </section>
 
 
